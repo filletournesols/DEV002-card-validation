@@ -1,0 +1,134 @@
+/* comentario*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(imágenes/000024.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+header {
+    padding: 50px;
+    color: whitesmoke;
+    font-size: 30px;
+    height: 100px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardForm {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 30px 100px 30px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -80px;
+    z-index: 1;
+    text-align: left;
+}
+
+.cardForm input {
+    border: 2px solid rgb(234, 234, 234);
+    font-size: 15px;
+    height: 30px;
+    width: 80%;
+    padding: 5px 12px;
+    transition: .3s ease all;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.btn-send {
+    border: none;
+    margin-top: 10px;
+    background-color: #c2a1db;
+    border: 2px solid #ced6e0;
+    font-size: 15px;
+    height: 30px;
+    width: 50%;
+    padding: 5px 12px;
+    transition: .3s ease all;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.cardForm input:hover {
+    border: 2px solid #7f15d0;
+}
+
+.btn-send:hover {
+    border: 2px solid #7f15d0;
+}
+
+.card {
+    width: 100%;
+    max-width: 550px;
+    min-height: 200px;
+    /*max-height: 300px;*/
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(imágenes/bg-tarjeta/bg-tarjeta-03.jpg);
+    background-size: cover;
+}
+
+/*.info .group .label {
+    margin-top: 170px;
+    font-size: 15px;
+    color: rgb(182, 123, 192);
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 60px;
+}*/
+
+.info .group .labelNumber {
+    font-size: 15px;
+    color: rgb(182, 123, 192);
+    text-align: left;
+    margin-top: 150px;
+}
+
+.info .group .labelName {
+    font-size: 15px;
+    color: rgb(182, 123, 192);
+    text-align: left;
+    margin-top: 5px;
+}
+
+.info .group .number,
+.info .group .name {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+/*.info .flexbox {
+    display: flex;
+    justify-content: space-between;
+}*/
+
