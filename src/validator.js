@@ -7,6 +7,7 @@ const validator = {
     return `${maskingCharacters}${last4Characters}`;
     //${firstCharacter}
   },
+  
  
   // reemplaza dígitos 0-9: /\d/g
   // reemplaza letras [a-zA-Z]
