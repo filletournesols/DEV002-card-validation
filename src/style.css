@@ -127,6 +127,10 @@ header {
     margin-top: 5px;
 }
 
+.info .group .number {
+    text-transform: lowercase;
+}
+
 /*.info .flexbox {
     display: flex;
     justify-content: space-between;
