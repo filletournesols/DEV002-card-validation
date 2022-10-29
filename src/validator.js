@@ -3,14 +3,13 @@ const validator = {
     //if (inputValue.length < 6) {return inputValue};
     const last4Characters = inputValue.substr(-4);
     //const firstCharacter = inputValue.substr(0,1);
-    const maskingCharacters = inputValue.substr(0, inputValue.length - 5).replace(/\d|[a-zA-Z]/g, "#");
+    const maskingCharacters = inputValue.substr(0, inputValue.length - 4).replace(/\d|[a-zA-Z]/g, "#");
     return `${maskingCharacters}${last4Characters}`;
     //${firstCharacter}
   },
-  
- 
-  // reemplaza dígitos 0-9: /\d/g
-  // reemplaza letras [a-zA-Z]
+
+  // reemplaza 0-9: /\d/g
+  // reemplaza letras: [a-zA-Z]
 
   isValid: function (inputValue){
     const number = (Array.from(inputValue.replace(/\s/g, "")));

@@ -15,9 +15,14 @@ const cardForm = document.querySelector("#cardForm");
 
 function handleForm(event) {
    event.preventDefault();
-   const inputValue = cardNumber.value
-   const finalValidation = validator.isValid(inputValue)     ///imitar
-   if (finalValidation){
+   let inputValue = cardNumber.value
+   let inputValueName = cardName.value
+   const finalValidation = validator.isValid(inputValue);
+   if (inputValue == ""){
+      alert ("Debes colocar el número de tu tarjeta");
+   } else if (inputValueName == ""){
+      alert ("Debes colocar tu nombre")
+   } else if(finalValidation){
       alert ("Tarjeta Válida");
    } else {
       alert ("Tarjeta inválida");
@@ -92,7 +97,7 @@ cardName.addEventListener("keyup", (e) => {
    }
 });
 
-cardForm.addEventListener('submit', handleForm);
+cardForm.addEventListener("submit", handleForm);
 
 //tarjetas válidas
 //5325477020691868

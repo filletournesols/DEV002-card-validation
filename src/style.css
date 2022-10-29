@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(imágenes/000024.JPG);
+    background-color: #FFF0DF;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -14,15 +14,22 @@ body {
 
 header {
     padding: 50px;
-    color: whitesmoke;
+    color: rgb(139,130,161);
     font-size: 30px;
     height: 100px;
+    margin-bottom: 50px;
+}
+
+header .paragraph {
+    padding: auto;
+    color: rgb(240,147,122);
+    font-size: 30px;
 }
 
 .contenedor {
     width: 90%;
     max-width: 1000px;
-    padding: 40px 20px;
+    padding: 2px 20px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -30,7 +37,7 @@ header {
 }
 
 .cardForm {
-    background: white;
+    background-color: rgb(248,216,180);
     width: 100%;
     max-width: 500px;
     padding: 30px 30px 100px 30px;
@@ -41,8 +48,13 @@ header {
     text-align: left;
 }
 
+.cardForm .group .inputNumber,
+.cardForm .group .inputName {
+   color: rgb(182, 123, 192);
+}
+
 .cardForm input {
-    border: 2px solid rgb(234, 234, 234);
+    border: 2px solid #FFF0DF;
     font-size: 15px;
     height: 30px;
     width: 80%;
@@ -57,8 +69,8 @@ header {
 .btn-send {
     border: none;
     margin-top: 10px;
-    background-color: #c2a1db;
-    border: 2px solid #ced6e0;
+    background-color: rgb(182, 123, 192);
+    border: 2px solid #FFF0DF;
     font-size: 15px;
     height: 30px;
     width: 50%;
@@ -69,6 +81,10 @@ header {
     flex-direction: column;
     align-items: center;
     margin: auto;
+}
+
+.btn-send{
+    color: rgb(248,216,180);
 }
 
 .cardForm input:hover {
@@ -83,7 +99,6 @@ header {
     width: 100%;
     max-width: 550px;
     min-height: 200px;
-    /*max-height: 300px;*/
     position: relative;
     z-index: 2;
     padding: 30px;
@@ -91,18 +106,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(imágenes/bg-tarjeta/bg-tarjeta-03.jpg);
+    background-image: url(imágenes/AA006.jpg);
     background-size: cover;
 }
-
-/*.info .group .label {
-    margin-top: 170px;
-    font-size: 15px;
-    color: rgb(182, 123, 192);
-    text-align: left;
-    margin-bottom: 5px;
-    margin-top: 60px;
-}*/
 
 .info .group .labelNumber {
     font-size: 15px;
@@ -130,9 +136,3 @@ header {
 .info .group .number {
     text-transform: lowercase;
 }
-
-/*.info .flexbox {
-    display: flex;
-    justify-content: space-between;
-}*/
-
