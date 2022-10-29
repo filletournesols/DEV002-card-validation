@@ -28,7 +28,6 @@ function handleForm(event) {
       alert ("Tarjeta inválida");
    }
 } 
-//cardForm.addEventListener('submit', handleForm);
 
 //""-> para describir el consolo.log; + o coma para agregar lo que se quiere en el console.log
 //console.log("inputtext"+cardNumber) 
@@ -54,32 +53,7 @@ cardNumber.addEventListener("keyup", (e) => {
 
    if(validator.maskify(inputValue) == "") {
     textCardNumber.textContent = "0000 0000 0000 0000";
-    //logo en la tarjeta
-    //logoMarca.innerHTML = "";
    }
-
-   // AGREGAR LOGO
-     //if(inputValue[0] == 4){
-     //logoMarca.innerHTML = "";
-     //const image = document.createElement("img");
-     //image.src = "imágenes/logos/visa.png";
-     //logoMarca.appendChild(image);
-     //} else if(inputValue[0] == 5){
-     //logoMarca.innerHTML = "";
-     //const image = document.createElement("img");
-     //image.src = "imágenes/logos/mastercard.png";
-     //logoMarca.appendChild(image);
-     //} else if(inputValue[0] == 3){
-     //logoMarca.innerHTML = "";
-     //const image = document.createElement("img");
-     //image.src = "imágenes/logos/american express.png";
-     //logoMarca.appendChild(image);
-     //} else if(inputValue[0] == 6){
-     //logoMarca.innerHTML = "";
-     //const image = document.createElement("img");
-     //image.src = "imágenes/logos/discover.jpeg";
-     //logoMarca.appendChild(image);
-     //}
 
 })
 
