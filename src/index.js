@@ -3,7 +3,7 @@ import validator from './validator.js';
 console.log(validator);
 
 //se puede evitar repetir tanto const si, en vez de poner punto y coma, se usa una coma
-//const card = document.querySelector("#card");
+//const card = document.querySelector("#card"); 
 
 const cardNumber = document.querySelector("#inputNumber");
 const cardName = document.querySelector("#inputName");
